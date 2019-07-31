@@ -30,19 +30,11 @@ Click the “View Results” button, you will see the returned results including
 ![ER Diagram](https://github.com/yanz4/Supply-Recommendation-System-for-Juice-Stores/blob/master/3.png?raL=true)
 
 # Linear Optimization Part
-This one-click optimization helps you to determine the target sales numbers of each product in stores at various city size based on existing sales records and pricing information to maximize profit. 
+We implemented one-click optimization function, aiming to help managers to determine the target sales numbers of each product in stores at various city size based on existing sales records and pricing information to maximize profit. 
 
-We used big M method to implement linear optimization. As all programs are run locally, the regional manager will input from webpage, generating .txt files. We used python to read the inputs, convert them to part of the constraints, and implement queries to read from mysql database to get the rest constraints. These processes are all dynamic. The output of the optimization will generate another .txt file, and then displayed on user interface.
+We used big M method to implement linear optimization. As all programs are run locally, the regional manager will input from webpage, generating .txt files. We used python to read the inputs, convert them to part of the constraints, and implement queries to read from mysql database to get the rest constraints. These processes are all dynamic. The output of the optimization will generate another .txt file, and then displayed on user interface. This function is for regional manager only, and each local store manager should use this result as a reference to adjust their marketing strategy. Note that local preference on taste, ingredients availability, and other feasibility factors shall be considered and reported to regional manager to justify marketing strategy at each store. 
 
-The function is considered advanced because:
-
-It dynamically connects user input, mysql database and the intermediate python optimization program.
-No package/API is abused during the process. Everything is hard-coded from scratch.
-It provides a complex and useful function in a real world setting.
-
-This function is for regional manager only, and each local store manager should use this result as a reference to adjust their marketing strategy. Note that local preference on taste, ingredients availability, and other feasibility factors shall be considered and reported to regional manager to justify marketing strategy at each store. 
-
-We have built-in constraints as follows:
+Built-in constraints are as follows:
 1.According to experience, each store has a fixed amount of foot traffic conversion rate, and a fixed amount of sales number of 10k cups per store, regardless of the products offered or marketing efforts.
 2.Due to seasonal availability, total pineapple available for each store is 30kg
 3.Due to taste preference survey, national total sale of Pumpkin Cordial will not reach 20, Lemon Drop will not reach 30, Arthritis Soother will not reach 10 (unit: k cups)
@@ -50,26 +42,21 @@ We have built-in constraints as follows:
 
 The input are as follows:
 
-Please input the max possible sales for any product. According to historic data, no product is likely to reach 50k cups in sales in all stores combined. Please enter a number, and it will overwrite the default 50k sales ceiling. If there is no solid evidence on substantial growth of the franchise, please leave it blank.
+A. Please input the max possible sales for any product. According to historic data, no product is likely to reach 50k cups in sales in all stores combined. Please enter a number, and it will overwrite the default 50k sales ceiling. If there is no solid evidence on substantial growth of the franchise, please leave it blank.
 
 Max possible sale for any product next year is: (please enter number only)
 
-
-
-Unit: k cups. Default value is 50. 
+[________] Unit: k cups. Default value is 50. 
 
 	
-Please consult with marketing team to determine maximum possible total sales of each product. If no value is entered, default value will be the number from the entered number above. Default for input 1 is 50.
+B. Please consult with marketing team to determine maximum possible total sales of each product. If no value is entered, default value will be the number from the entered number above. Default for input 1 is 50.
 
 Input Product ID, max total sales (k cups), separated by commas, no space.
 Input another constraint after the previous one, separated by a comma, no space. 
 
 Please input product ID as capitalized P followed by its ID, such as ‘P1’.
 Please input max total sales as number only.
-
-
-
-
+[________]
 
 e.g. According to survey, total sale of product 2 next year could be up to 30k cups, while product 4 will only be 10k cups.
 Input: P2,30,P4,10
