@@ -1,1 +1,2 @@
 # Supply-Recommendation-System-for-Juice-Stores
+This Project aims to help juice chainstore owners or regional managers to view and manage products and sales of all stores in this regional. We build the management system with MySQL and PHP so managers could Create, Read, Update and Delete information from local server. We also provide an advanced function named “One-Click Sales Optimization”, which provides a best sales plan to reach maximum profit depending on the sales goal set by user.
