@@ -28,5 +28,6 @@ Taking the product query as an example, here is a screenshot of the interface. W
 ![ER Diagram](https://github.com/yanz4/Supply-Recommendation-System-for-Juice-Stores/blob/master/1.png?raw=true)
 For example, if we want to find the top 10 best sellers in the morning, we can set the values as shown in the screenshot below. 
 ![ER Diagram](https://github.com/yanz4/Supply-Recommendation-System-for-Juice-Stores/blob/master/2.png?raw=true)
+
 Click the “View Results” button, you will see the returned results including the name of the products and the number of products sold.
 ![ER Diagram](https://github.com/yanz4/Supply-Recommendation-System-for-Juice-Stores/blob/master/3.png?raw=true)
