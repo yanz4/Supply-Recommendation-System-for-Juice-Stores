@@ -68,12 +68,18 @@ A sample result is as follows:
 
 
 Product  Sales_Target
-Green Power_L: 0.0 \n
+Green Power_L: 0.0
+
 Lemon Drop_L: 30.0
+
 Inner Peach_L: 1.0
+
 Square Root_L: 1.0
+
 Force Field_L: 12.0
+
 Pink Pom_L: 32.5
+
 …...
 Maximum Profits = $740.52(k)
 
