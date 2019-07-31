@@ -68,7 +68,7 @@ A sample result is as follows:
 
 
 Product  Sales_Target
-Green Power_L: 0.0
+Green Power_L: 0.0 \n
 Lemon Drop_L: 30.0
 Inner Peach_L: 1.0
 Square Root_L: 1.0
