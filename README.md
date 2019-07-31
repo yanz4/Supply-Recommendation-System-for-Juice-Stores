@@ -3,4 +3,4 @@ This Project aims to help juice chainstore owners or regional managers to view a
 
 In addition to traditional useful functionals such as view and search for sales records, edit store and product information,etc, one major problem that concerns managers is how to maximize profits when they own multiple juice stores. Given that actual profits in each juice store vary with city size and ingredient cost, we think Linear Optimization model could help determine the best sales plan. Given the population is approximately the same within a city, so annual orders, or cups of juice sales, would be about the same in each store. When the cups of juice sales keep relative constant we could maximize total profits by encouraging each local store to promote products with the most profit.
 
-![Image description](https://www.google.com/search?q=picture&rlz=1C1GCEA_enUS761US761&source=lnms&tbm=isch&sa=X&ved=0ahUKEwigqquyyN_jAhVLQq0KHTJVBNgQ_AUIESgB&biw=1680&bih=858#imgrc=RWgONKucTUWshM:)
+![Image description](https://media.wired.com/photos/598e35994ab8482c0d6946e0/master/w_582,c_limit/phonepicutres-TA.jpg)
