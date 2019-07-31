@@ -13,7 +13,7 @@ pip3 install
 python3 -m flask run
 
 ## Database Part:
-3 relations are compiled: 
+Three relations are compiled: 
 1.	“Orders” contains transaction history from all stores. One order relates to exactly one sale of one product. 10,000 transactions data are generated for entire year 2018. It contains foreign keys “ProductID” and “StoreID”.
 2.	“Products” include price, default cost, nutritious information and recipes of all products. These are actual data acquired from online juice recipes. As a chain franchise, a certain product is priced the same despite regional differences
 3.	“Stores” has information about the location and operating cost of each store. Then, the operating cost are integrated into default cost of each product, showing the exact profit of any product sold at any store after calculation.
