@@ -1,0 +1,44 @@
+Product  Sales_Target
+Green Power_L: 0.0
+Lemon Drop_L: 30.0
+Inner Peach_L: 45.0
+Square Root_L: 0.0
+Force Field_L: 27.0
+Pink Pom_L: 8.0
+Pumpkin Cordial_L: 0.0
+Lean Green_L: 0.0
+Strawberry Mint Julep_L: 0.0
+Mango Tango_L: 0.0
+Berry A-Peeling_L: 0.0
+Hang Under_L: 0.0
+Arthritis Soother_L: 10.0
+Splendid Spinach_L: 0.0
+Green Power_M: 0.0
+Lemon Drop_M: 0.0
+Inner Peach_M: 0.0
+Square Root_M: 0.0
+Force Field_M: 12.0
+Pink Pom_M: 37.0
+Pumpkin Cordial_M: 20.0
+Lean Green_M: 0.0
+Strawberry Mint Julep_M: 40.5
+Mango Tango_M: 0.0
+Berry A-Peeling_M: 10.5
+Hang Under_M: 0.0
+Arthritis Soother_M: 0.0
+Splendid Spinach_M: 0.0
+Green Power_S: 0.0
+Lemon Drop_S: 0.0
+Inner Peach_S: 0.0
+Square Root_S: 45.0
+Force Field_S: 6.0
+Pink Pom_S: 0.0
+Pumpkin Cordial_S: 0.0
+Lean Green_S: 4.5
+Strawberry Mint Julep_S: 4.5
+Mango Tango_S: 0.0
+Berry A-Peeling_S: 0.0
+Hang Under_S: 0.0
+Arthritis Soother_S: 0.0
+Splendid Spinach_S: 0.0
+Maximum Profits = $812.5(k)

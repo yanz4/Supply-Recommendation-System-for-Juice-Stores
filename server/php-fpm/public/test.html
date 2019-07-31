@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cli test</title>
+</head>
+</ul>
+
+<h3>
+    <h3>
+        This function is developed for regional managers. Store managers can the output for adjusting their marketing
+        and storage strategy. The assumption is that regional difference of favourite taste, ingredients availability
+        and other feasibility factors are reported to regional manager to make marketing strategy at each store.
+    </h3>
+    <h3> We have built-in constraints as follows:</h3>
+</h3>
+<h4>1.According to previous experience, each store has a fixed amount of foot traffic conversion rate, and a fixed
+    amount of sales number of 10k cups per store, regardless of the products offered or marketing efforts.
+    <h4>
+        2.Due to seasonal availability, total pineapple available for each store is 30kg.
+    </h4>
+    <h4>
+        3.Due to taste preference survey, national total sale of Pumpkin Cordial will not reach 20, Lemon Drop will not
+        reach 30, Arthritis Soother will not reach 10 (unit: k cups).
+    </h4>
+    <h4> 4.Due to taste preference survey, national total sale of Force Field will be at least 30 (unit: k cups).</h4>
+    <h4>
+        The input are as follows: </h4>
+    <h4>Input 1: Please input the max possible sales for any product. According to historic data, no product is likely
+        to reach 50k cups in sales in all stores combined. Please enter a number, and it will overwrite the default 50k
+        sales ceiling. If there is no solid evidence on substantial growth of the franchise, please leave it blank.
+
+        Max possible sale for any product next year is: (please enter number only)
+    </h4>
+    <input id='input1' name="input1" type="text" />
+
+    <h4>
+        Input 2: Please consult with marketing team to determine maximum possible total sales of each product. If no
+        value is entered, default value will be the number from the entered number above. Default for input 1 is 50.
+
+        Input Product ID, max total sales (k cups), separated by commas, no space.
+        Input another constraint after the previous one, separated by a comma, no space.
+
+        Please input product ID as capitalized P followed by its ID, such as ‘P1’.
+        Please input max total sales as number only.
+    </h4>
+</h4>
+e.g. According to survey, total sale of product 2 next year could be up to 30k cups, while product 4 will only be 10k
+cups.
+Input: P2,30,P4,10
+
+e.g. Management plans to cancel product 6 and 7 next year, and would like to see how they should adjust marketing
+accordingly.
+Input: P6,0,P7,0
+
+</h4>
+    <input id='input2' name="input2" type="text" />
+<h3>
+    After you finish inserting values, click this "GO" button.
+</h3>
+<button id="submit">Send Data</button>
+
+<p id='result_container' style="margin-top: 50px">
+    <h3>Here is the result area</h3>
+    <p id='result'></p>
+</p>
+
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $('#test').click(function () {
+        $.getJSON('http://localhost:5000/', function (result) {
+            console.log(result)
+            $('#result').text(JSON.stringify(result))
+        })
+    })
+</script>
+
+
+</html>

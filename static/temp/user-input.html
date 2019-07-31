@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Input</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+  <div class="container">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="p-5">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">User Input</h1>
+                  </div>
+                  <div class="text-left text-gray-900">
+                    <p>
+                      <p>
+                        This function is developed for regional managers. Store managers can the output for adjusting
+                        their marketing
+                        and storage strategy. The assumption is that regional difference of favourite taste, ingredients
+                        availability
+                        and other feasibility factors are reported to regional manager to make marketing strategy at
+                        each store.
+                      </p>
+                      <p class="h5"> We have built-in constraints as follows:</p>
+                      <p>1.According to previous experience, each store has a fixed amount of foot traffic conversion
+                        rate, and a fixed
+                        amount of sales number of 10k cups per store, regardless of the products offered or marketing
+                        efforts.</p>
+
+                      <p>
+                        2.Due to seasonal availability, total pineapple available for each store is 30kg.
+                      </p>
+                      <p>
+                        3.Due to taste preference survey, national total sale of Pumpkin Cordial will not reach 20,
+                        Lemon Drop will not
+                        reach 30, Arthritis Soother will not reach 10 (unit: k cups).
+                      </p>
+                      <p> 4.Due to taste preference survey, national total sale of Force Field will be at least 30
+                        (unit: k cups).
+                      </p>
+                    </p>
+
+
+                    <form class="user">
+                      <p class="h5">The input are as follows: </p>
+                      <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                          <h6 class="m-0 font-weight-bold text-primary">Input 1</h6>
+                        </div>
+                        <div class="card-body">
+                          <p>Input 1: Please input the max possible sales for any product. According to historic data,
+                            no
+                            product is likely
+                            to reach 50k cups in sales in all stores combined. Please enter a number, and it will
+                            overwrite
+                            the default 50k
+                            sales ceiling. If there is no solid evidence on substantial growth of the franchise, please
+                            leave it blank.
+
+                            Max possible sale for any product next year is: (please enter number only)
+                          </p>
+                          <div class="form-group">
+                            <input name='input1' type="text" class="form-control form-control-user" id="input1"
+                              placeholder="input 1">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                          <h6 class="m-0 font-weight-bold text-primary">Input 2</h6>
+                        </div>
+                        <div class="card-body">
+                          <p> Input 2: Please consult with marketing team to determine maximum possible total sales of
+                            each product. If no
+                            value is entered, default value will be the number from the entered number above. Default
+                            for input 1 is 50.
+
+                            Input Product ID, max total sales (k cups), separated by commas, no space.
+                            Input another constraint after the previous one, separated by a comma, no space.
+
+                            Please input product ID as capitalized P followed by its ID, such as ‘P1’.
+                            Please input max total sales as number only.
+                          </p>
+                          <div class="form-group">
+                            <input name='input2' type="text" class="form-control form-control-user" id="input2"
+                              placeholder="input 2">
+                          </div>
+                        </div>
+                      </div>
+
+                   <btn href="index.html" class="btn btn-primary btn-user btn-block">
+                     Send Data
+                   </btn>
+
+                    </form>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
