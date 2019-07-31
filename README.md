@@ -22,3 +22,8 @@ We used a combination of python connector loops and CSV manual imports to bring 
 
 
 ![ER Diagram](https://github.com/yanz4/Supply-Recommendation-System-for-Juice-Stores/blob/master/ER%20DIAGRAM.png?raw=true)
+
+## Front-End Part:
+Taking the product query as an example, here is a screenshot of the interface. When a user selects a period of a day and the number of products they are interested in, the database will return the best sellers during that period.     
+![ER Diagram](https://github.com/yanz4/Supply-Recommendation-System-for-Juice-Stores/blob/master/1.png?raw=true)
+For example, if we want to find the top 10 best sellers in the morning, we can set the values as shown in the screenshot below. 
